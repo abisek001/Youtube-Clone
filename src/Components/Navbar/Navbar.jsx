@@ -2,6 +2,7 @@ import React from "react";
 import "./Navbar.css";
 import Searchbar from "./Searchbar/Searchbar";
 import { RiVideoAddLine } from "react-icons/ri";
+import { BiUserCircle } from "react-icons/bi";
 import { IoMdNotificationsOutline } from "react-icons/io";
 
 function Navbar() {
@@ -52,6 +53,10 @@ function Navbar() {
             />
           </div>
           <IoMdNotificationsOutline size={22} className="BellIcone" />
+          <div className="authLogo_Box">
+            <BiUserCircle size={22} className="authLogo"/>
+            Sign in
+          </div>
         </div>
       </div>
     </div>
