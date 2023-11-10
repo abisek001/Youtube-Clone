@@ -6,9 +6,9 @@
     font-size: 1.5rem;
     padding: 5px;
     border-radius: 20px;
-  }
-  .micIcon:hover {
-    background-color: gray;
+    &:hover{
+      background-color: gray;
+    }
   }
   .searchBar {
     width: 25rem;

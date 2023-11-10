@@ -7,8 +7,8 @@ import { IoMdNotificationsOutline } from "react-icons/io";
 function Navbar() {
   return (
     <div className="container_navbar">
-      <div className="leftside_logo_Navbar">
-        <div className="logo_Container">
+      <div className="logo_Container">
+        <div className="leftside_Navbar">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             height="24"
@@ -27,30 +27,32 @@ function Navbar() {
           />
         </div>
         <Searchbar />
-        <RiVideoAddLine size={22} className="VideoIcon" />
-        <div className="appIcon">
-          <img
-            width="20"
-            height="20"
-            src="https://img.icons8.com/fluency-systems-regular/48/more.png"
-            alt="App icone load failed"
-          />
-          <img
-            width="20"
-            height="20"
-            src="https://img.icons8.com/fluency-systems-regular/48/more.png"
-            alt="App icone load failed"
-            className="appImg"
-          />
-          <img
-            width="20"
-            height="20"
-            src="https://img.icons8.com/fluency-systems-regular/48/more.png"
-            alt="App icone load failed"
-            className="appImg"
-          />
+        <div className="rightside_Navbar">
+          <RiVideoAddLine size={22} className="VideoIcon" />
+          <div className="appIcon">
+            <img
+              width="20"
+              height="20"
+              src="https://img.icons8.com/fluency-systems-regular/48/more.png"
+              alt="App icone load failed"
+            />
+            <img
+              width="20"
+              height="20"
+              src="https://img.icons8.com/fluency-systems-regular/48/more.png"
+              alt="App icone load failed"
+              className="appImg"
+            />
+            <img
+              width="20"
+              height="20"
+              src="https://img.icons8.com/fluency-systems-regular/48/more.png"
+              alt="App icone load failed"
+              className="appImg"
+            />
+          </div>
+          <IoMdNotificationsOutline size={22} className="BellIcone" />
         </div>
-        <IoMdNotificationsOutline size={22} className="BellIcone" />
       </div>
     </div>
   );
