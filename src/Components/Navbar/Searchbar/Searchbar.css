@@ -1,33 +1,46 @@
 .search_Container {
   display: flex;
   align-items: center;
+  position: relative;
   .micIcon {
     margin-left: 20px;
-    font-size: 1.5rem;
+    font-size: 20px;
     padding: 5px;
     border-radius: 20px;
     cursor: pointer;
-    &:hover{
+    &:hover {
       background-color: gray;
     }
   }
   .searchBar {
-    width: 25rem;
+    width: 29rem;
     border: 2px solid gray;
-    border-radius: 2rem;
+    border-radius: 3rem 0rem 0rem 4rem;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    padding: 5px;
-    .searchIcon {
-      color: gray;
+    padding: 10px;  
+  }
+  .searchIcon_Box{
+    border: 2px solid gray;
+    padding: 11px;
+    border-radius: 0px 2rem 2rem 0px;
+    width: 2rem;
+    display: flex;
+    justify-content: center;
+    background-color: #f0f0f0;
+    &:hover{
+      background-color: #d9d9d9;
     }
   }
+  .searchIcon {
+    color: hsl(0, 0%, 49%);
+    cursor: pointer;
+  }
   .searchInput {
-    width: 18rem;
+    width: 30rem;
     border: 2rem;
     margin-left: 0.8rem;
-    border-right: 1px solid grey;
     &:focus {
       outline: none;
     }

@@ -17,6 +17,7 @@
         border: 2px solid;
         padding: 3px;
         font-weight: bold;
+        position: relative;
     }
   }
   .logo_Container {
