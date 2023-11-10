@@ -3,12 +3,14 @@
   .leftside_Navbar {
     display: flex;
     align-items: center;
+    cursor: pointer;
   }
   .rightside_Navbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 13rem;
+    cursor: pointer;
     .authLogo_Box{
         cursor: pointer;
         color: #127dd2;
@@ -20,7 +22,6 @@
   .logo_Container {
     display: flex;
     align-items: center;
-    cursor: pointer;
     justify-content: space-between;
     margin: 0.2rem;
     padding: 0.5rem;

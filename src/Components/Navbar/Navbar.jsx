@@ -6,6 +6,14 @@ import { BiUserCircle } from "react-icons/bi";
 import { IoMdNotificationsOutline } from "react-icons/io";
 
 function Navbar() {
+  //const CurrentUser = null;
+  const CurrentUser = {
+    result: {
+      email: "abisek501@BiLogoGmail.com",
+      name: "Abisek",
+      JoinedOn: "10-11-2023:57:23:4892",
+    },
+  };
   return (
     <div className="container_navbar">
       <div className="logo_Container">
@@ -53,9 +61,27 @@ function Navbar() {
             />
           </div>
           <IoMdNotificationsOutline size={22} className="BellIcone" />
-          <div className="authLogo_Box">
-            <BiUserCircle size={22} className="authLogo"/>
-            Sign in
+          <div>
+            {CurrentUser ? (
+              <>
+                <div className="chanel_logo_App">
+                  <p className="char_logo_App">
+                    {CurrentUser?.result.name ? (
+                      <>{CurrentUser?.result.name.charAt(0).toUpperCase()}</>
+                    ) : (
+                      <>{CurrentUser?.result.email.charAt(0).toUpperCase()}</>
+                    )}
+                  </p>
+                </div>
+              </>
+            ) : (
+              <>
+                <div className="authLogo_Box">
+                  <BiUserCircle size={22} className="authLogo" />
+                  Sign in
+                </div>
+              </>
+            )}
           </div>
         </div>
       </div>
