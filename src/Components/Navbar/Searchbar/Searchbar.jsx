@@ -15,7 +15,7 @@ function Searchbar() {
     "Avernger",
     "Super man",
     "Bat man",
-  ];
+  ].filter((i) => i.toUpperCase().includes(searchQurey.toUpperCase()));
   return (
     <div className="search_Container">
       <div className="searchBar">
@@ -36,7 +36,9 @@ function Searchbar() {
         />
       </div>
       <BsMicFill className="micIcon" />
-      {searchQurey && searchItem && <SearchList Suggestion={Suggestion} />}
+      {searchQurey && searchItem && (
+        <SearchList Suggestion={Suggestion} setSearchQurey={setSearchQurey} />
+      )}
     </div>
   );
 }
