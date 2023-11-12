@@ -5,17 +5,18 @@ import { BsMicFill } from "react-icons/bs";
 import SearchList from "./SearchList";
 
 function Searchbar() {
-  const [searchQurey, setSearchQurey] = useState("");
+  const [searchQuery, setSearchQuery] = useState("");
   const [searchItem, setSearchItem] = useState(false);
   const Suggestion = [
     "The Marvel",
     "Iron man",
     "Spider man",
     "Hulk",
-    "Avernger",
+    "Avenger",
     "Super man",
-    "Bat man",
-  ].filter((i) => i.toUpperCase().includes(searchQurey.toUpperCase()));
+    "Bat man"
+  ].filter(i => i.toUpperCase().includes(searchQuery.toUpperCase()));
+
   return (
     <div className="search_Container">
       <div className="searchBar">
@@ -24,10 +25,11 @@ function Searchbar() {
           placeholder="Search"
           className="searchInput"
           aria-label="Search"
-          value={searchQurey}
-          onChange={(i) => setSearchQurey(i.target.value)}
+          value={searchQuery}
+          onChange={i => setSearchQuery(i.target.value)}
           onClick={(e) => setSearchItem(true)}
         />
+        {console.log(searchQuery)}
       </div>
       <div className="searchIcon_Box">
         <FaSearch
@@ -36,8 +38,8 @@ function Searchbar() {
         />
       </div>
       <BsMicFill className="micIcon" />
-      {searchQurey && searchItem && (
-        <SearchList Suggestion={Suggestion} setSearchQurey={setSearchQurey} />
+      {searchQuery && searchItem && (
+        <SearchList Suggestion={Suggestion} setSearchQuery={setSearchQuery} />
       )}
     </div>
   );
