@@ -7,6 +7,15 @@
   display: flex;
   .char_logo_App{
     margin: auto;
-    font-weight: bolder;
+    font-weight: bolder;  
+  }
+}
+.app_Page_Container{
+  display: flex;
+  background-color: aquamarine;
+  .app_Page_Items{
+    width: calc(100vw - 5rem);
+    height: calc(100vh - 3.65rem);
+    overflow-y: auto;
   }
 }
