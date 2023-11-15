@@ -1,6 +1,12 @@
+//Inbuilt modules:
 import React from "react";
+import { Link } from "react-router-dom";
+
+//Own Files:
 import "./Navbar.css";
 import Searchbar from "./Searchbar/Searchbar";
+
+//React Icons:
 import { RiVideoAddLine } from "react-icons/ri";
 import { BiUserCircle } from "react-icons/bi";
 import { IoMdNotificationsOutline } from "react-icons/io";
@@ -27,13 +33,15 @@ function Navbar() {
           >
             <path d="M21 6H3V5h18v1zm0 5H3v1h18v-1zm0 6H3v1h18v-1z"></path>
           </svg>
-          <img
-            width="100"
-            height="20"
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/YouTube_Logo_2017.svg/1280px-YouTube_Logo_2017.svg.png"
-            alt="YouTube-Logo-social-media-those-icons-flat-those-icons"
-            className="nav_Logo"
-          />
+          <Link to={'/'}>
+            <img
+              width="100"
+              height="20"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/YouTube_Logo_2017.svg/1280px-YouTube_Logo_2017.svg.png"
+              alt="YouTube-Logo-social-media-those-icons-flat-those-icons"
+              className="nav_Logo"
+            />
+          </Link>
         </div>
         <Searchbar />
         <div className="rightside_Navbar">
