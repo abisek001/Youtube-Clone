@@ -26,3 +26,16 @@
     }
     
 }
+
+/*Style for Drawer sidebar*/
+
+.container_DrawerSidebar{
+    height: calc(100vh - 3.4rem);
+    position: absolute;
+    z-index: 500;
+    width: 100vw;
+    .drawerSidebar_Items{
+        width: 15rem;
+        background-color: rgb(28, 28, 28);
+    }
+}
