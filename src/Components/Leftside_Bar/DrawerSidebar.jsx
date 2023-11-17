@@ -1,10 +1,11 @@
 import React from "react";
-import { AiFillPlaySquare, AiOutlineHome } from "react-icons/ai";
+import { AiFillLike, AiFillPlaySquare, AiOutlineHome } from "react-icons/ai";
 import { FaHistory } from "react-icons/fa";
 import {
   MdOutlineSubscriptions,
   MdOutlineVideoLibrary,
   MdOutlineExplore,
+  MdOutlineWatchLater,
 } from "react-icons/md";
 
 function DrawerSidebar() {
@@ -44,6 +45,33 @@ function DrawerSidebar() {
           <div className="drawer_Icone">
             <AiFillPlaySquare size={22} />
             <span className="drawer_HomeIconeText">Your Video</span>
+          </div>
+          <div className="drawer_Icone">
+            <MdOutlineWatchLater size={22} />
+            <span className="drawer_HomeIconeText">Watch Later</span>
+          </div>
+          <div className="drawer_Icone">
+            <AiFillLike size={22} />
+            <span className="drawer_HomeIconeText">Liked Videos</span>
+          </div>
+        </div>
+        <div className="Subscription_Container">
+          <h3 className="subscription_title">Subscriptions</h3>
+          <div className="subscription_Chanel">
+            <p className="chanel_Logo">C</p>
+            <span className="chanel_Name">Chanel</span>
+          </div>
+          <div className="subscription_Chanel">
+            <p className="chanel_Logo">C</p>
+            <span className="chanel_Name">Chanel</span>
+          </div>
+          <div className="subscription_Chanel">
+            <p className="chanel_Logo">C</p>
+            <span className="chanel_Name">Chanel</span>
+          </div>
+          <div className="subscription_Chanel">
+            <p className="chanel_Logo">C</p>
+            <span className="chanel_Name">Chanel</span>
           </div>
         </div>
       </div>

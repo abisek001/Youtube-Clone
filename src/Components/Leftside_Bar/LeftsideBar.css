@@ -30,19 +30,19 @@
 /*Style for Drawer sidebar*/
 
 .container_DrawerSidebar{
-    height: calc(100vh - 3.4rem);
     position: absolute;
     z-index: 500;
     width: 100vw;
     .drawerSidebar_Items{
         width: 15rem;
         background-color: white;
-       
+        overflow-y: auto;
+        height: calc(100vh - 3.4rem);
     }
     .drawer_Icone{
         padding: 1rem;
         display: flex;
-        margin-left: 0.8rem;
+        padding-left: 1.5rem;
         &:hover{
             background-color: #7c7c7c;
         }&:active{
@@ -56,5 +56,38 @@
     .library_Drawer_Sidebar{
         border-bottom: 2px solid rgba(128, 128, 128, 0.995);
         border-top: 2px solid rgba(128, 128, 128, 0.966);
+    }
+    .Subscription_Container{
+        .subscription_title{
+            margin-left: 1rem;
+        }
+        .subscription_Chanel{
+            display: flex;
+            cursor: pointer;
+            align-items: center;
+            margin-top: -30px;
+            margin-bottom: 1rem;
+            .chanel_Logo{
+                border-radius: 100%;
+                background-color: #606060 ;
+                padding: 0.5rem;
+                color: white;
+                width: 22px;
+                display: flex;
+                justify-content: center;
+                margin-left: 0.8rem;
+            }
+            .chanel_Name{
+                margin-left: 2rem;
+            }
+        }
+    }
+    ::-webkit-scrollbar{
+        width: 0.5rem;
+        height: 0.5rem;
+    }
+    ::-webkit-scrollbar-thumb{
+        background-color: #909090;
+        border-radius: 5rem;
     }
 }
