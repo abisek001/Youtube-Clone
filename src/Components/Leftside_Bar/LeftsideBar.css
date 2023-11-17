@@ -36,6 +36,25 @@
     width: 100vw;
     .drawerSidebar_Items{
         width: 15rem;
-        background-color: rgb(28, 28, 28);
+        background-color: white;
+       
+    }
+    .drawer_Icone{
+        padding: 1rem;
+        display: flex;
+        margin-left: 0.8rem;
+        &:hover{
+            background-color: #7c7c7c;
+        }&:active{
+            background-color: #606060;
+        }
+        .drawer_HomeIconeText{
+            margin-left: 2rem;
+            
+        }
+    }
+    .library_Drawer_Sidebar{
+        border-bottom: 2px solid rgba(128, 128, 128, 0.995);
+        border-top: 2px solid rgba(128, 128, 128, 0.966);
     }
 }
