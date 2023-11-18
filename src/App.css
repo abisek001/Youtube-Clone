@@ -27,8 +27,6 @@
   border: 2px solid transparent;
 }
 .dot {
-  height: 4px;
-  width: 4px;
   font-size: xxx-large;
-  margin: -40px 8px 0 0 ;
+  margin: -40px 3px 0 0 ;
 }

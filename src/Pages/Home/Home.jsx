@@ -16,7 +16,7 @@ function Home() {
     _id: 2,
     video_src: "https://res.cloudinary.com/ehizeex-shop/video/upload/v1668377666/NetflixApp/Action_mlw9wx.mp4" ,
     Chanel : "Marvel Artist" ,
-    logo:"https://img.icons8.com/avantgarde/100/avengers.png",
+    /* logo:"https://img.icons8.com/avantgarde/100/avengers.png", */
     Uploder:"Abisek",
     title: "Madame Web | Official Trailer",
     description: "description of video 2"
