@@ -1,21 +1,34 @@
 .chanel_logo_App {
-  background-color: #127dd2;
+  background-color: #fff;
   padding: 0.2rem;
   border-radius: 50%;
   width: 2.2rem;
   height: 2.2rem;
   display: flex;
-  .char_logo_App{
+  border: 2px solid;
+  .char_logo_App {
     margin: auto;
-    font-weight: bolder;  
+    font-weight: bolder;
   }
 }
-.app_Page_Container{
+.app_Page_Container {
   display: flex;
-  background-color: aquamarine;
-  .app_Page_Items{
+  background-color: white;
+  .app_Page_Items {
     width: calc(100vw - 5rem);
     height: calc(100vh - 3.65rem);
     overflow-y: auto;
   }
+}
+.video_Box_App {
+  width: 21rem;
+  height: 17rem;
+  margin-bottom: 1rem;
+  border: 2px solid transparent;
+}
+.dot {
+  height: 4px;
+  width: 4px;
+  font-size: xxx-large;
+  margin: -40px 8px 0 0 ;
 }
