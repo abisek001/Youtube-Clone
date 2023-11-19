@@ -19,7 +19,7 @@ function AllRoutes() {
         <Route path='/watchlater' element={<WatchLater/>} />
         <Route path='/yourvideo' element={<YourVideo/>} />
         <Route path='/likedvideo' element={<LikedVideo/>} />
-        <Route path='/video' element={<VideoPage/>} />
+        <Route path='/video/:id' element={<VideoPage/>} />
     </Routes>
   )
 }
