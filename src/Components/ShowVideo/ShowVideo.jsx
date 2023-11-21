@@ -14,7 +14,6 @@ function ShowVideo({ vids }) {
           <div className="chanel_Video">
             <div className="char_Video_logo">
               <span className="chanel_Video_logo">
-                {" "}
                 {vids?.Uploder?.charAt(0).toUpperCase()}
               </span>
             </div>
