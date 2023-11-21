@@ -21,7 +21,12 @@
       }
       .videoPage_Chanel_Details {
         display: flex;
-        align-items: center;
+        justify-content: space-between;
+        width: 48rem;
+        .videoPage_Chanel {
+          display: flex;
+          align-items: center;
+        }
         .videoPage_Chanel_Logo {
           background-color: black;
           border-radius: 50%;
@@ -32,8 +37,8 @@
           justify-content: center;
           color: white;
         }
-        .videoPage_Chanel_Name{
-            margin-left: 1rem;
+        .videoPage_Chanel_Name {
+          margin-left: 1rem;
         }
       }
       .videoPage_video_Views {
@@ -41,9 +46,33 @@
         font-size: 0.8rem;
         margin-left: 1rem;
       }
-      .videopage_Comments{
+      .videopage_Comments {
         margin-left: 1rem;
       }
+    }
+  }
+  .more_Video {
+    width: calc(100vw - 4.5rem - 70vw);
+    background-color: lightskyblue;
+    padding: 0 1rem;
+  }
+}
+
+/* Video page button style*/
+
+.VideoPage_Buttons {
+  display: flex;
+  align-items: center;
+  .threeDot_button {
+    margin: auto 0;
+  }
+  .save_button {
+    display: flex;
+    margin: 0.5rem;
+    cursor: pointer;
+    .Save_text {
+      margin-top: -5px;
+      margin-left: 1rem;
     }
   }
 }

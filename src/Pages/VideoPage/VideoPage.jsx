@@ -1,6 +1,7 @@
 import React from "react";
 
 import "./VideoPage.css";
+import VideoPage_Buttons from "./VideoPage_Buttons";
 
 function VideoPage() {
   const video =
@@ -16,12 +17,11 @@ function VideoPage() {
             <span className="videoPage_video_Title">title</span>
             <br />
             <div className="videoPage_Chanel_Details">
-              <div className="videoPage_Chanel_Logo">
-                A
+              <div className="videoPage_Chanel">
+                <div className="videoPage_Chanel_Logo">A</div>
+                <span className="videoPage_Chanel_Name">Marvel India</span>
               </div>
-              <span className="videoPage_Chanel_Name">
-                Marvel India
-              </span>
+              <VideoPage_Buttons />
             </div>
             <br />
             <span className="videoPage_video_Views">
@@ -33,9 +33,7 @@ function VideoPage() {
           </div>
         </div>
       </div>
-      <div className="more_Video">
-        More Video
-      </div>
+      <div className="more_Video">More Video</div>
     </div>
   );
 }
