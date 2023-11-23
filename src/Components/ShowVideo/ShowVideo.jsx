@@ -1,9 +1,11 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
 import "./ShowVideo.css";
 
 function ShowVideo({ vids }) {
   return (
-    <>
+    <Link to = { `/video/${vids?._id}`}>
       <div>
         <video controls className="Video_player">
           <source src={`${vids?.video_src}`} />
@@ -37,7 +39,7 @@ function ShowVideo({ vids }) {
           <span className="video_Views">1k views<div className="dot">.</div> 1years ago</span>
         </div>
       </div>
-    </>
+    </Link>
   );
 }
 

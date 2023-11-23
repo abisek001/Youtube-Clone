@@ -22,7 +22,7 @@
       .videoPage_Chanel_Details {
         display: flex;
         justify-content: space-between;
-        width: 48rem;
+        width: 55rem;
         .videoPage_Chanel {
           display: flex;
           align-items: center;
@@ -63,13 +63,15 @@
 .VideoPage_Buttons {
   display: flex;
   align-items: center;
-  .threeDot_button {
-    margin: auto 0;
-  }
   .save_button {
     display: flex;
     margin: 0.5rem;
     cursor: pointer;
+    border-radius: 20rem;
+    padding: 0.5rem;
+    &:hover {
+      background-color: #e5e5e5;
+    }
     .Save_text {
       margin-top: -3px;
       margin-left: 1rem;
