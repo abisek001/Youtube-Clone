@@ -1,5 +1,10 @@
 .container_navbar {
  /*  border: 1px solid; */
+ position: sticky;
+ top: 0;
+ background-color: white;
+ opacity: 1;
+ z-index: 1;
   .leftside_Navbar {
     display: flex;
     align-items: center;

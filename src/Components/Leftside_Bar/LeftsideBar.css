@@ -4,6 +4,9 @@
     background-color: white;
     box-sizing: border-box;
     overflow-y: auto;
+    position: sticky;
+    top: 0;
+    left: 0;
     .icones_Container{
         display: flex;
         cursor: pointer;

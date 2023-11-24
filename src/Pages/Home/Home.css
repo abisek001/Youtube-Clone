@@ -1,22 +1,46 @@
-.home_Navbar_Container{
-    padding: 1rem;
-    overflow-y: hidden;
-    & span:first-child{
-        padding-left: 1.5rem;
-        padding-right: 1.5rem;
+.home_Navbar_Container {
+  padding: 1rem;
+  overflow-y: hidden;
+  & span:first-child {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    background-color: black;
+    color: white;
+    &:hover {
+      background-color: black;
+    }
+  }
+  .home_nav_button {
+    margin: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+    &:hover {
+      background-color: grey;
+    }
+  }
+}
+.navigation_List {
+  position: sticky;
+  display: flex;
+  overflow-x: hidden;
+  top: 3.5rem;
+  background-color: white;
+  opacity: 1;
+  z-index: 1;
+  .navList_Button {
+    margin: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+    &:hover {
+      background-color: #b2b2b2;
+    }
+    &:first-child{
         background-color: black;
         color: white;
-        &:hover{
-            background-color: black;
-        }
+        padding-left: 1rem;
+        padding-right: 1rem;
     }
-    .home_nav_button{
-        margin: 0.5rem;
-        padding: 0.5rem;
-        border-radius: 10px;
-        cursor: pointer;
-        &:hover{
-            background-color: grey;
-        }
-      }
+  }
 }

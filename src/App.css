@@ -17,7 +17,6 @@
   .app_Page_Items {
     width: calc(100vw - 5rem);
     height: calc(100vh - 3.65rem);
-    overflow-y: auto;
   }
 }
 
