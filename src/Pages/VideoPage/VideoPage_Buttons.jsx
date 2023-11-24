@@ -19,11 +19,11 @@ import {
 import "./VideoPage.css";
 
 function VideoPage_Buttons() {
-  // eslint-disable-next-line
+  
   const [saveVideo, setSaveVideo] = useState(false);
-  // eslint-disable-next-line
+
   const [like, setLike] = useState(false);
-  // eslint-disable-next-line
+
   const [disLike, setDisLike] = useState(false);
 
   const toggleSave = ()  => {

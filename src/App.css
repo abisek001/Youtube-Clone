@@ -20,12 +20,7 @@
     overflow-y: auto;
   }
 }
-.video_Box_App {
-  width: 21rem;
-  height: 17rem;
-  margin-bottom: 1rem;
-  border: 2px solid transparent;
-}
+
 .dot {
   font-size: xxx-large;
   margin: -40px 3px 0 0 ;

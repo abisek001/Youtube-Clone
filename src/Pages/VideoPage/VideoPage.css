@@ -1,5 +1,4 @@
 .VideoPage_Container {
-  overflow-y: hidden;
   margin: 1.5rem 4.5rem;
   display: flex;
   .video_Display {
@@ -7,7 +6,6 @@
     .videoPage_Video {
       padding: 0.1rem;
       height: 70vh;
-      width: 100%;
       border: 1px solid rgba(37, 37, 37, 0.2);
       border-radius: 1rem;
     }
@@ -22,7 +20,7 @@
       .videoPage_Chanel_Details {
         display: flex;
         justify-content: space-between;
-        width: 55rem;
+        width: 50rem;
         .videoPage_Chanel {
           display: flex;
           align-items: center;

@@ -1,0 +1,22 @@
+.home_Navbar_Container{
+    padding: 1rem;
+    overflow-y: hidden;
+    & span:first-child{
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        background-color: black;
+        color: white;
+        &:hover{
+            background-color: black;
+        }
+    }
+    .home_nav_button{
+        margin: 0.5rem;
+        padding: 0.5rem;
+        border-radius: 10px;
+        cursor: pointer;
+        &:hover{
+            background-color: grey;
+        }
+      }
+}

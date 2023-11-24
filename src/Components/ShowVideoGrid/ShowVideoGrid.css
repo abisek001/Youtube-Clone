@@ -1,5 +1,11 @@
 .video_Grid_Container{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
+    .video_Box_App {
+        margin-bottom: 1rem;
+        border: 2px solid transparent;
+        width: 21rem;
+        height: 17rem;
+      }
 }
