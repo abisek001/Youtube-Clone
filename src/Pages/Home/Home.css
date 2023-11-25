@@ -27,7 +27,7 @@
   background-color: white;
   opacity: 1;
   z-index: 1;
-  .nav-list-container{
+  .nav-list-container {
     display: flex;
     scroll-behavior: smooth;
     overflow-x: hidden;
@@ -44,7 +44,7 @@
     }
   }
   .scroll-button-left,
-  .scroll-button-right{
+  .scroll-button-right {
     background: none;
     border: none;
     color: inherit;
@@ -54,27 +54,25 @@
     border-radius: 100%;
     padding: 0.5rem;
     background-color: white;
-    &:hover{
+    &:hover {
       background-color: #e5e5e5;
-      
     }
   }
-  .scroll-button-left{
+  .scroll-button-left {
     position: sticky;
     left: 0rem;
   }
-  .scroll-button-right{
+  .scroll-button-right {
     position: sticky;
     right: 0rem;
   }
-  
 }
-.nav-list-container :nth-child(1){
+.nav-list-container :nth-child(1) {
   background-color: black;
   color: white;
   padding-left: 1rem;
   padding-right: 1rem;
-  &:hover{
+  &:hover {
     background-color: black;
   }
 }

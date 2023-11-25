@@ -2,6 +2,7 @@ import React from "react";
 
 import "./VideoPage.css";
 import VideoPage_Buttons from "./VideoPage_Buttons";
+import Comments from "../../Components/Comments/Comments";
 
 function VideoPage() {
   const video =
@@ -29,6 +30,7 @@ function VideoPage() {
             </span>
             <div className="videopage_Comments">
               <h3>Comments</h3>
+              <Comments/>
             </div>
           </div>
         </div>

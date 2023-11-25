@@ -1,0 +1,41 @@
+.comments_Container {
+  .comments_Form {
+    display: flex;
+    width: 100%;
+    .comments_Input {
+      width: 100%;
+      padding: 0.5%;
+      padding-left: 2%;
+      background-color: transparent;
+      border: 0;
+      border-bottom: 2px solid gray;
+      &:focus {
+        border-bottom: 2px solid black;
+        outline: none;
+      }
+    }
+  }
+  .buttons_Container {
+    float: right;
+    .cancel_Button,
+    .comment_Button {
+      border: none;
+      background: none;
+      outline: none;
+      font-weight: bolder;
+      padding: 0.5rem;
+      border-radius: 20px;
+      margin-top: 5px;
+    }
+    .cancel_Button{
+        margin-right: 5px;
+        &:hover {
+            background-color: #e5e5e5;
+          }
+    }
+    .comment_Button{
+        background-color: #0556bf;
+        color: white;
+    }
+  }
+}
