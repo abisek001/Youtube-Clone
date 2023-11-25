@@ -23,24 +23,58 @@
 .navigation_List {
   position: sticky;
   display: flex;
-  overflow-x: hidden;
   top: 3.5rem;
   background-color: white;
   opacity: 1;
   z-index: 1;
+  .nav-list-container{
+    display: flex;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
   .navList_Button {
     margin: 0.5rem;
     padding: 0.5rem;
     border-radius: 10px;
     cursor: pointer;
+    flex: none;
     &:hover {
-      background-color: #b2b2b2;
+      background-color: #e5e5e5;
     }
-    &:first-child{
-        background-color: black;
-        color: white;
-        padding-left: 1rem;
-        padding-right: 1rem;
+  }
+  .scroll-button-left,
+  .scroll-button-right{
+    background: none;
+    border: none;
+    color: inherit;
+    outline: inherit;
+    cursor: pointer;
+    font-size: x-large;
+    border-radius: 100%;
+    padding: 0.5rem;
+    background-color: white;
+    &:hover{
+      background-color: #e5e5e5;
+      
     }
+  }
+  .scroll-button-left{
+    position: sticky;
+    left: 0rem;
+  }
+  .scroll-button-right{
+    position: sticky;
+    right: 0rem;
+  }
+  
+}
+.nav-list-container :nth-child(1){
+  background-color: black;
+  color: white;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  &:hover{
+    background-color: black;
   }
 }

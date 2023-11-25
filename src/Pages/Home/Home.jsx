@@ -2,7 +2,8 @@ import React from "react";
 
 import LeftsideBar from "../../Components/Leftside_Bar/LeftsideBar";
 import ShowVideoGrid from "../../Components/ShowVideoGrid/ShowVideoGrid";
-import './Home.css';
+import "./Home.css";
+import HorizontalScrollList from "./HorizontalScrollList";
 
 function Home() {
   const videos = [
@@ -200,21 +201,14 @@ function Home() {
     "Songs",
     "Motivation",
     "Programming",
-    "Comedy"
+    "Comedy",
   ];
+
   return (
     <div className="app_Page_Container">
       <LeftsideBar />
       <div className="app_Page_Items">
-        <div className="navigation_List">
-          {NavList.map((item) => {
-            return (
-              <p className="navList_Button" key={item}>
-                {item}
-              </p>
-            );
-          })}
-        </div>
+        <HorizontalScrollList NavList = {NavList}/>
         <ShowVideoGrid videos={videos} />
       </div>
     </div>
