@@ -54,6 +54,7 @@
     border-radius: 100%;
     padding: 0.5rem;
     background-color: white;
+    
     &:hover {
       background-color: #e5e5e5;
     }
