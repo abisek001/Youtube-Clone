@@ -5,13 +5,18 @@ import DisplayComments from "./DisplayComments";
 function Comments() {
   const [comment, setComment] = useState("");
 
-  const handleCommentChange = (e) => {
-    setComment(e.target.value);
-  };
-
-  const handleCancel = () => {
-    setComment("");
-  };
+  const CommentList = [
+    {
+      _id: "1",
+      userName: "Abisek",
+      userComments: "Awesome",
+    },
+    {
+      _id: "2",
+      userName: "Srikanth",
+      userComments: "Good",
+    },
+  ];
 
   const handleSubmmit = (i) => {
     i.preventDefault();
@@ -27,7 +32,7 @@ function Comments() {
             placeholder="Add a comment..."
             className="comments_Input"
             value={comment}
-            onChange={handleCommentChange}
+            onChange={(e) => setComment(e.target.value)}
           />
         </form>
         <div className="buttons_Container">
@@ -35,7 +40,7 @@ function Comments() {
             type="button"
             value="Cancel"
             className="cancel_Button"
-            onClick={handleCancel}
+            onClick={() => setComment("")}
           />
           <input
             type="submit"
@@ -46,7 +51,15 @@ function Comments() {
         </div>
       </div>
       <div className="display_Comments_Container">
-        <DisplayComments/>
+        {CommentList.map((comment) => {
+          return (
+            <DisplayComments
+              _id={comment._id}
+              userComments={comment.userComments}
+              userName={comment.userName}
+            />
+          );
+        })}
       </div>
     </div>
   );
