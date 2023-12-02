@@ -1,9 +1,8 @@
-import React from 'react'
+import React from "react";
+import ShowVideo from "../ShowVideo/ShowVideo";
 
-import WatchLater from '../WatchLater/WatchLater';
-
-function History() {
-  const history = [
+function ShiwVideoList({videoId}) {
+  const videos = [
     {
       _id: 1,
       video_src:
@@ -177,10 +176,16 @@ function History() {
   ];
 
   return (
-  <div>
-    <WatchLater page = "History" videoList = { history } />
-  </div>
-  )
+    <div className="video_Grid_Container">
+      {videos?.filter(q => q._id === videoId).map((vid) => {
+        return (
+          <div className="video_Box_App" key={vid._id}>
+            <ShowVideo vids={vid} />
+          </div>
+        );
+      })}
+    </div>
+  );
 }
 
-export default History
+export default ShiwVideoList;

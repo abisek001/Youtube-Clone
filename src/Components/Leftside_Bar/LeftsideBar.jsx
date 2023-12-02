@@ -20,13 +20,13 @@ function LeftsideBar() {
         <span className="homeIconeText">Explore</span>
       </div>
       <div className="icones_Container">
-      <img
-            width="24"
-            height="24"
-            src="https://img.icons8.com/material-outlined/24/youtube-shorts.png"
-            alt="youtube-shorts"
-            className="homeIcone"
-          />
+        <img
+          width="24"
+          height="24"
+          src="https://img.icons8.com/material-outlined/24/youtube-shorts.png"
+          alt="youtube-shorts"
+          className="homeIcone"
+        />
         <span className="homeIconeText">Shorts</span>
       </div>
       <div className="icones_Container">

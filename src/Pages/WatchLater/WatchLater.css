@@ -1,0 +1,27 @@
+.history_Container{
+    padding: 0.2rem;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.history_Leftside{
+    margin: 0.8rem;
+    padding: 0.8rem;
+    width: 45%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    .clear_History{
+        color: gray;
+        font-weight: bold;
+        font-size: 1.5rem;
+        cursor: pointer;
+        &:hover {
+            color: black;
+        }
+    }
+}
+.history_Leftside b{
+    font-size: 3rem;
+}

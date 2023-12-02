@@ -8,7 +8,7 @@ function ShowVideoGrid({ videos }) {
       {videos.map((vid) => {
         return <div className="video_Box_App" key={vid._id}>
             <ShowVideo vids = {vid}/>
-        </div>;
+        </div>
       })}
     </div>
   );
