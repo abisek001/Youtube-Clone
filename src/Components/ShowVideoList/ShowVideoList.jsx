@@ -1,9 +1,8 @@
-import React from 'react'
+import React from "react";
+import ShowVideo from "../ShowVideo/ShowVideo";
 
-import WHL from '../../Components/WHL/WHL';
-
-function History() {
-  const history = [
+function ShowVideoList({videoId}) {
+  const videos = [
     {
       _id: 1,
       video_src:
@@ -177,10 +176,16 @@ function History() {
   ];
 
   return (
-  <div>
-    <WHL page = {"History"} videoList = { history } />
-  </div>
-  )
+    <div className="video_List_Container">
+      {videos?.filter(q => q._id === videoId).map((video) => {
+        return (
+          <div className="video_List" key={video._id}>
+            <ShowVideo vids={video} />
+          </div>
+        );
+      })}
+    </div>
+  );
 }
 
-export default History
+export default ShowVideoList;

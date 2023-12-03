@@ -1,8 +1,8 @@
-import React from "react";
-import ShowVideo from "../ShowVideo/ShowVideo";
+import React from 'react';
+import WHL from '../../Components/WHL/WHL';
 
-function ShiwVideoList({videoId}) {
-  const videos = [
+function WatchLater() {
+  const WatchLater = [
     {
       _id: 1,
       video_src:
@@ -176,16 +176,10 @@ function ShiwVideoList({videoId}) {
   ];
 
   return (
-    <div className="video_Grid_Container">
-      {videos?.filter(q => q._id === videoId).map((vid) => {
-        return (
-          <div className="video_Box_App" key={vid._id}>
-            <ShowVideo vids={vid} />
-          </div>
-        );
-      })}
-    </div>
-  );
+  <div>
+    <WHL page = {"Watch Later"} videoList = { WatchLater } />
+  </div>
+  )
 }
 
-export default ShiwVideoList;
+export default WatchLater;

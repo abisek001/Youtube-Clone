@@ -1,15 +1,19 @@
+.WHL_Container {
+    display: flex;
+}
+
 .history_Container{
     padding: 0.2rem;
     margin: 0;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .history_Leftside{
     margin: 0.8rem;
     padding: 0.8rem;
-    width: 45%;
-    height: 50vh;
+    width: 200%;
+   /*  height: 50vh; */
     display: flex;
     flex-direction: column;
     .clear_History{
