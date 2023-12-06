@@ -1,3 +1,7 @@
+.video_Container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
 .Video_player {
   height: 70%;
   width: calc(100% - 0.8rem);
@@ -23,18 +27,19 @@
     color: white;
   }
 }
-.video_Details{
-    height: fit-content;
-    margin-left: 1rem;
-    .video_Title{
-        font-weight: bold;
+.video_Details {
+  height: fit-content;
+  margin-left: 1rem;
+  .video_Title {
+    font-weight: bold;
+  }
+  .Chanel_Name,
+  .video_Views {
+    color: #606060;
+    display: flex;
+    font-size: 15px;
+    &:hover {
+      color: black;
     }
-    .Chanel_Name,.video_Views{
-        color: #606060;
-        display: flex;
-        font-size: 15px;
-        &:hover{
-            color: black;
-        }
-    }
+  }
 }

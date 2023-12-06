@@ -1,7 +1,9 @@
-import React from 'react'
+import React from "react";
+import { FaHistory } from "react-icons/fa";
 
-import LeftsideBar from '../../Components/Leftside_Bar/LeftsideBar';
-import './Library.css';
+import LeftsideBar from "../../Components/Leftside_Bar/LeftsideBar";
+import "./Library.css";
+import WHLVideoList from "../../Components/WHL/WHLVideoList";
 
 function Library() {
   const videos = [
@@ -177,15 +179,25 @@ function Library() {
     },
   ];
   return (
-    <div className='app_Page_Container'>
-      <LeftsideBar/>
-        <div className='app_Page_Items'>
-            <div className='videoPage_Container'>
-
+    <div className="app_Page_Container">
+      <LeftsideBar />
+      <div className="app_Page_Items">
+        <div className="videoPage_Container">
+          <h1 className="libraryPage_Title">
+            <b className="libraryPage_History_Icone">
+              <FaHistory />
+            </b>
+            <b>History</b>
+          </h1>
+          <div className="library_VideoList">
+            <div>
+              <WHLVideoList page={"History"} videoList={videos} />
             </div>
+          </div>
         </div>
+      </div>
     </div>
-  )
+  );
 }
 
 export default Library;

@@ -1,5 +1,7 @@
 import React from "react";
+
 import ShowVideo from "../ShowVideo/ShowVideo";
+import './ShowVideoList.css';
 
 function ShowVideoList({videoId}) {
   const videos = [
@@ -176,15 +178,15 @@ function ShowVideoList({videoId}) {
   ];
 
   return (
-    <div className="video_List_Container">
+    < /* className="video_List_Container" */>
       {videos?.filter(q => q._id === videoId).map((video) => {
         return (
-          <div className="video_List" key={video._id}>
+          <div /* className="video_List" */ key={video._id}>
             <ShowVideo vids={video} />
           </div>
         );
       })}
-    </div>
+    </>
   );
 }
 

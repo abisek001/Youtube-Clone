@@ -1,4 +1,16 @@
-.videoPage_Container{
-    border-bottom: 1px solid grey;
-    padding: 1rem 2rem;
+.videoPage_Container {
+  border-bottom: 1px solid grey;
+  border-top: 1px solid grey;
+  padding: 1rem 2rem;
+  .libraryPage_Title {
+    margin: 0.5rem 4rem;
+    .libraryPage_History_Icone {
+      color: black;
+    }
+  }
+  .libraryPage_Title b {
+    margin: auto 0.5rem;
+    padding: auto 0.5rem;
+    font-size: medium;
+  }
 }

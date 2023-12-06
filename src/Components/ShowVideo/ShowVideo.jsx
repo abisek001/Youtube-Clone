@@ -5,8 +5,8 @@ import "./ShowVideo.css";
 
 function ShowVideo({ vids }) {
   return (
-    <Link to = { `/video/${vids?._id}`}>
-      <div>
+    <Link to={`/video/${vids?._id}`}>
+      <div /* className="video_Container" */>
         <video controls className="Video_player">
           <source src={`${vids?.video_src}`} />
         </video>
@@ -33,10 +33,12 @@ function ShowVideo({ vids }) {
         )}
         <div className="video_Details">
           <span className="video_Title">{vids?.title}</span>
-          <br/>
-          <span className="Chanel_Name">{vids?.Chanel}</span> 
+          <br />
+          <span className="Chanel_Name">{vids?.Chanel}</span>
 
-          <span className="video_Views">1k views<div className="dot">.</div> 1years ago</span>
+          <span className="video_Views">
+            1k views<div className="dot">.</div> 1years ago
+          </span>
         </div>
       </div>
     </Link>
