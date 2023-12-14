@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { Provider } from 'react-redux';
-import { thunk } from 'redux-thunk';
+import thunk from 'redux-thunk';
 import { applyMiddleware, compose } from 'redux';
 import {createStore} from 'redux';
-import { Reducers } from './Reducers';
+import Reducers from './Reducers/index';
 
 import './index.css';
 import App from './App';

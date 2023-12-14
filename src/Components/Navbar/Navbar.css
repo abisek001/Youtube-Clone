@@ -1,10 +1,10 @@
 .container_navbar {
- /*  border: 1px solid; */
- position: sticky;
- top: 0;
- background-color: white;
- opacity: 1;
- z-index: 1;
+  /*  border: 1px solid; */
+  position: sticky;
+  top: 0;
+  background-color: white;
+  opacity: 1;
+  z-index: 1;
   .leftside_Navbar {
     display: flex;
     align-items: center;
@@ -15,15 +15,17 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 13rem;
+    width: 25rem;
     cursor: pointer;
-    .authLogo_Box{
-        cursor: pointer;
-        color: #127dd2;
-        border: 2px solid;
-        padding: 3px;
-        font-weight: bold;
-        position: relative;
+    .authLogo_Box {
+      cursor: pointer;
+      color: #127dd2;
+      border: 2px solid;
+      font-weight: bold;
+      position: relative;
+      padding: 10px;
+      display: flex;
+      align-items: center;
     }
   }
   .logo_Container {
@@ -44,5 +46,14 @@
   }
   .appImg {
     margin-top: -13px;
+  }
+  .login_Container {
+    display: flex;
+    align-items: center;
+  }
+  .google_login_button {
+    color: #fff;
+    background-color: #127dd2;
+    cursor: pointer;
   }
 }
