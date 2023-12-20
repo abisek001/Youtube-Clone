@@ -1,0 +1,11 @@
+const authResucer = (state={data:null}, actions) => {
+    switch(actions.type) {
+        case "AUTH":
+            localStorage.setItem('profile', JSON.stringify({...actions?.data}))
+            return {...state, data:actions?.data}    
+        default :
+            return state;
+    }
+}
+
+export default authResucer;
