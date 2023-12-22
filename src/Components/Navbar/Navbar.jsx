@@ -12,6 +12,8 @@ import { BiUserCircle } from "react-icons/bi";
 import { IoMdNotificationsOutline } from "react-icons/io";
 import { GoogleLogin } from "react-google-login";
 import { gapi } from "gapi-script";
+import { useDispatch } from "react-redux";
+import { login } from "../../Actions/auth";
 
 function Navbar({ toggleDrawer }) {
   const CurrentUser = null;
@@ -31,9 +33,13 @@ function Navbar({ toggleDrawer }) {
     }
     gapi.load("client:auth2", start);
   },[])
+
+ const dispatch = useDispatch();
+
   const onSuccess = (response) => {
     const Email = response.profileObj.email;
     console.log(Email);
+    dispatch(login({email:Email}))
   }
   const onFailure = (response) => {
     console.log("Unable to login with Google", response);

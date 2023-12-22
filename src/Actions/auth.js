@@ -5,7 +5,7 @@ export const login = (authData) => async (dispatch) => {
     try {
         const {data} = await api.login(authData);
         dispatch({type:"AUTH", data})
-    } catch {
+    } catch(error) {
         alert(error)
     }
 }
